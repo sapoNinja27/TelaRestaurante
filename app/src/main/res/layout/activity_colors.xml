@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="269dp"
+        android:layout_height="48dp"
+        android:onClick="entrarSemLogin"
+        android:text="Selecionar"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:iconTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="216dp"
+        android:layout_height="234dp"
+        app:layout_constraintBottom_toTopOf="@+id/enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/va"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:onClick="va"
+            android:text="Vermelho/Azul" />
+
+        <RadioButton
+            android:id="@+id/al"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:onClick="al"
+            android:text="Amarelo/Laranja" />
+
+        <RadioButton
+            android:id="@+id/vr"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:onClick="vr"
+            android:text="Verde/Roxo" />
+
+        <RadioButton
+            android:id="@+id/cl"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:onClick="cl"
+            android:text="Cinza/Lilas" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
